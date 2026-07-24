@@ -1,0 +1,46 @@
+{
+  "name": "@rustwrap/webpack",
+  "version": "1.0.6",
+  "description": "A webpack-compatible Node API and CLI backed by the Rolldown bundler (Rust/Oxc) for fast builds and excellent tree-shaking. Drop-in `webpack` override for pcf-scripts and webpack-based pipelines.",
+  "main": "lib/index.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "test": "node test/run.js"
+  },
+  "bin": {
+    "webpack": "bin/rustwrap-webpack.js",
+    "rustwrap-webpack": "bin/rustwrap-webpack.js"
+  },
+  "files": [
+    "lib/",
+    "bin/",
+    "README.md"
+  ],
+  "dependencies": {
+    "acorn": "^8.17.0",
+    "buffer": "^6.0.3",
+    "eslint-scope": "^9.1.2",
+    "loader-runner": "^4.3.2",
+    "mime-types": "^3.0.2",
+    "postcss": "^8.5.16",
+    "postcss-modules": "^6.0.1",
+    "rolldown": "^1.2.0",
+    "schema-utils": "^4.3.3",
+    "tapable": "^2.3.3",
+    "terser-webpack-plugin": "^5.6.1",
+    "webpack-sources": "^3.5.0"
+  },
+  "keywords": [
+    "webpack",
+    "rolldown",
+    "bundler",
+    "pcf",
+    "tree-shaking"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": "^20.19.0 || ^22.13.0 || >=24"
+  }
+}
